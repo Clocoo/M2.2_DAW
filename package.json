@@ -1,0 +1,23 @@
+{
+  "name": "httpserver",
+  "version": "1.0.0",
+  "description": "prueba1",
+  "main": "3000",
+  "scripts": {
+    "dev": "nodemon 3000",
+    "test": "hola"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pruebarepo"
+  },
+  "keywords": [
+    "12"
+  ],
+  "author": "osmar",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

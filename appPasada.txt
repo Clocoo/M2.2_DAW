@@ -1,0 +1,20 @@
+const cors = require("cors");
+const express = require("express");
+const proyectosController = require("./Controladores/proyecto.js");
+const donadoresController = require("./Controladores/donador.js")
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// Proyectos
+app.get("/proyectos",proyectosController.getAll); // cuando se pida un proyecto por su ID
+app.get("/proyectos/:ID",proyectosController.getByID); // sku
+
+// Donadores
+app.get("donadores",donadoresController.getAll);
+app.get("/donadores/:RFC",donadoresController.getByRFC);
+
+app.listen(3000,()=> {
+    console.log("Server en el puerto 3000");
+});
